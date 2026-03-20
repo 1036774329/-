@@ -231,8 +231,8 @@ presets:
       push: false                  # 默认不推送
       report_mode: "current"
       once:
-        analyze: true              # 每个时段只分析一次
-        push: true                 # 每个时段只推送一次
+        analyze: false              # 每个时段只分析一次
+        push: false                 # 每个时段只推送一次
 
     periods:
       morning_briefing:
@@ -254,6 +254,7 @@ presets:
         # analyze 继承 default: false → 午间不做 AI 分析，节省 API
         # once 继承 default（push: true）→ 只推一次
 
+        analyze: true
       closing_summary:
         name: "收工汇总"
         start: "17:00"
