@@ -116,16 +116,26 @@ rss:
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
 
-    - id: "ruanyifeng"
-      name: "阮一峰的网络日志"
-      url: "http://www.ruanyifeng.com/blog/atom.xml"
-      enabled: false                  # 禁用
-      # max_age_days: 3               # 示例：推送 3 天内的文章（更新较慢的博客）
-     
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
 
+    - id: "ccheart"
+      name: "美国心脏协会"
+      url: "https://www.heart.org/"
+
+    - id: "ccheart-guess"
+      name: "医心网"
+      url: "http://www.ccheart.com.cn/rss.xml"
+
+    - id: "drvoice-guess"
+      name: "严道医声"
+      url: "http://www.drvoice.net/rss.xml"
+
+
+
+
+ 
     # 自定义源示例
     # - id: "custom-feed"
     #   name: "自定义源"
@@ -278,7 +288,7 @@ display:
   # 两者共享此处的平台/RSS 配置，但开关互相独立（可只开 AI 分析、不推送展示）
   standalone:
     platforms: ["zhihu","wallstreetcn-hot","toutiao","baidu","cls-hot","bilibili-hot-search","ifeng","https://www.heart.org/","DrVoice","ccheart"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: []                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    rss_feeds: ["ccheart","ccheart-guess","drvoice-guess"] # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
@@ -329,8 +339,8 @@ notification:
       chat_id: ""                     # Telegram Chat ID
 
     email:
-      from: "1036774329@qq.com"                        # 发件人邮箱地址
-      password: "mxsvptduymyzbbfb"                    # 发件人邮箱密码或授权码
+      from: "173654199@qq.com"                        # 发件人邮箱地址
+      password: "Lun5201314."                    # 发件人邮箱密码或授权码
       to: "1036774329@qq.com"                          # 收件人邮箱，多个用逗号分隔
       smtp_server: "smtp.qq.com"                 # SMTP 服务器（可选，留空自动识别）
       smtp_port: "465"                   # SMTP 端口（可选，留空自动识别）
@@ -593,4 +603,3 @@ advanced:
     slack: 4000
   batch_send_interval: 3              # 批次发送间隔（秒）
   feishu_message_separator: "━━━━━━━━━━━━━━━━"
-
