@@ -54,12 +54,6 @@ schedule:
 platforms:
   enabled: true                         # 是否启用热榜平台抓取
   sources:
-    - id: "AHA"
-      name: "美国心脏协会 (AHA)"
-    - id: "ccheart"
-      name: "医心网"
-    - id: "DrVoice"
-      name: "严道医声网"
     - id: "toutiao"
       name: "今日头条"
     - id: "baidu"
@@ -336,7 +330,7 @@ notification:
 
     email:
       from: "1036774329@qq.com"                        # 发件人邮箱地址
-      password: "_e357"                    # 发件人邮箱密码或授权码
+      password: "mxsvptduymyzbbfb"                    # 发件人邮箱密码或授权码
       to: "1036774329@qq.com"                          # 收件人邮箱，多个用逗号分隔
       smtp_server: "smtp.qq.com"                 # SMTP 服务器（可选，留空自动识别）
       smtp_port: "465"                   # SMTP 端口（可选，留空自动识别）
