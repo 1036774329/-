@@ -123,14 +123,20 @@ rss:
     - id: "aha-google-news"
       name: "AHA (Google News 聚合)"
       url: "https://news.google.com/rss/search?q=American+Heart+Association+guidelines+OR+AHA+cardiology&hl=en-US&gl=US&ceid=US:en"
+      enabled: true
+      max_age_days: 3  # 只看最近3天的新闻
 
     - id: "ccheart-rss"
       name: "医心网 (RSS 测试)"
       url: "http://www.ccheart.com.cn/rss.xml"
+      enabled: true
+      max_age_days: 7
 
     - id: "drvoice-guess"
       name: "严道医声"
       url: "http://www.drvoice.net/rss.xml"
+      enabled: true
+      max_age_days: 7
 
 
 
