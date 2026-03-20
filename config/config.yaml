@@ -118,23 +118,23 @@ rss:
       enabled: true
       max_age_days: 15  # 只看最近3天的新闻
 
-      - id: "circulation-rss"
-  name: "Circulation 期刊"
-  url: "https://www.ahajournals.org/action/showFeed?type=etoc&feed=rss&jc=circ"
-  enabled: true
-  max_age_days: 15
+    - id: "circulation-rss"
+      name: "Circulation 期刊"
+      url: "https://www.ahajournals.org/action/showFeed?type=etoc&feed=rss&jc=circ"
+      enabled: true
+      max_age_days: 15
 
-  - id: "aha-google-news"
-  name: "美国心脏协会 (Google News)"
-  url: "https://news.google.com/rss/search?q=american+heart+association&hl=en-US&gl=US&ceid=US:en"
-  enabled: true
-  max_age_days: 15
+    - id: "aha-google-news"
+      name: "美国心脏协会 (Google News)"
+      url: "https://news.google.com/rss/search?q=american+heart+association&hl=en-US&gl=US&ceid=US:en"
+      enabled: true
+      max_age_days: 15
 
-  - id: "aha-newsroom-rsshub"
-  name: "美国心脏协会新闻室 (RSSHub)"
-  url: "https://rsshub.app/rsshub/rss/https://newsroom.heart.org/news?page=1#.main-content div.views-row"
-  enabled: true
-  max_age_days: 15
+    - id: "aha-newsroom-rsshub"
+      name: "美国心脏协会新闻室 (RSSHub)"
+      url: "https://rsshub.app/rsshub/rss/https://newsroom.heart.org/news?page=1#.main-content div.views-row"
+      enabled: true
+      max_age_days: 15
 
     - id: "ccheart-rss"
       name: "医心网 "
