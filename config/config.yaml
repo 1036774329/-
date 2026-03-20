@@ -112,15 +112,15 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "aha-google-news"
-      name: "AHA (Google News 聚合)"
-      url: "https://www.ahajournals.org/action/showFeed?type=etoc&feed=rss&jc=circ"
+    - id: "aha-newsroom"
+      name: "美国心脏协会"
+      url: "newsroom.heart.org/rss"
       enabled: true
       max_age_days: 15  # 只看最近3天的新闻
 
     - id: "ccheart-rss"
-      name: "医心网 (RSS 测试)"
-      url: "/"
+      name: "医心网 "
+      url: ""
       enabled: true
       max_age_days: 15  # 允许20  天内的文章
 
