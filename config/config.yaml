@@ -114,7 +114,7 @@ rss:
   feeds:
     - id: "aha-newsroom"
       name: "美国心脏协会"
-      url: "newsroom.heart.org/rss"
+      url: "https://newsroom.heart.org/rss"
       enabled: true
       max_age_days: 15  # 只看最近3天的新闻
 
