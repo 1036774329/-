@@ -114,19 +114,19 @@ rss:
   feeds:
     - id: "aha-google-news"
       name: "AHA (Google News 聚合)"
-      url: "https://news.google.com/rss/search?q=American+Heart+Association+guidelines+OR+AHA+cardiology&hl=en-US&gl=US&ceid=US:en"
+      url: "https://www.heart.org/-/media/RSS-Feeds/generalnewsfeed.xml"
       enabled: true
       max_age_days: 15  # 只看最近3天的新闻
 
     - id: "ccheart-rss"
       name: "医心网 (RSS 测试)"
-      url: "http://www.ccheart.com.cn/"
+      url: "/"
       enabled: true
       max_age_days: 15  # 允许20  天内的文章
 
     - id: "drvoice-guess"
       name: "严道医声"
-      url: "http://www.drvoice.net/rss.xml"
+      url: ""
       enabled: true
       max_age_days: 15
 
@@ -424,7 +424,7 @@ ai:
   
   model: "deepseek/deepseek-chat"
 
-  api_key: "sk-c65bfb72d8694831be096005d0d7239b"                       # API Key（建议使用环境变量 AI_API_KEY）
+  api_key: "sk-c65bfb72d8694831be096005d0d7239"                       # API Key（建议使用环境变量 AI_API_KEY）
   
   api_base: ""                      # 自定义 API 端点（可选，大多数情况留空）
                                     # 示例: https://api.openai.com/v1（自建代理或兼容接口）
