@@ -114,7 +114,7 @@ rss:
   feeds:
     - id: "aha-google-news"
       name: "AHA (Google News 聚合)"
-      url: "https://newsroom.heart.org/news/rss/xml"
+      url: "https://www.ahajournals.org/action/showFeed?type=etoc&feed=rss&jc=circ"
       enabled: true
       max_age_days: 15  # 只看最近3天的新闻
 
